@@ -15,7 +15,7 @@ def install_or_remove_packages():
     print("Autrement, entrer 'default' dans " + iOrR + " les packages par défaut listés dans le programme")
     packages = input().lower()
     if packages == "default":
-        packages = defaultPackages
+        packages = "defaultPackages"
     if iOrR == "install":
         os.system("sudo apt-get install " + packages)
 
